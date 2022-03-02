@@ -89,13 +89,13 @@ extension was json the ```header/no-header``` flag doesn't make sense.
 Assuming the example of the previous section. First pull the docker image 
 
 ```bash
-docker pull <>
+docker pull docker.io/pedrorangelbraga/bigquery-query-runner:1.0.0
 ```
 
 and run with
 ```bash
 docker run -it \
-      docker image \
+      docker.io/pedrorangelbraga/bigquery-query-runner:1.0.0 \
       --github-token=<toekn>\
       --github-organization=my_company\
       --github-repository=my_project \
